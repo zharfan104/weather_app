@@ -8,6 +8,10 @@ import '../../cubits/weather_cubit/weather_cubit.dart';
 import '../../cubits/weather_cubit/weather_state.dart';
 import 'forecast_weather_section_loaded.dart';
 
+const _kMinimumForecastList = 33;
+// API returns data points in 3-hour intervals -> 1 day = 8 intervals
+const _kForecastListPerDayIndex = [0, 8, 16, 24, 32];
+
 class ForecastWeatherSection extends StatelessWidget {
   const ForecastWeatherSection({super.key});
 
@@ -34,13 +38,13 @@ class ForecastWeatherSection extends StatelessWidget {
         if (forecastLoadDataState.isLoaded) {
           final forecastData = forecastLoadDataState.getData!;
 
-          // API returns data points in 3-hour intervals -> 1 day = 8 intervals
-          final items = [0, 8, 16, 24, 32];
-          return ForecastWeatherSectionLoaded(
-            weathers: [
-              for (var i in items) forecastData.list[i],
-            ],
-          );
+          if (forecastData.list.length >= _kMinimumForecastList) {
+            return ForecastWeatherSectionLoaded(
+              weathers: [
+                for (var i in _kForecastListPerDayIndex) forecastData.list[i],
+              ],
+            );
+          }
         }
 
         return const SizedBox();
