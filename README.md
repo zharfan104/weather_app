@@ -1,17 +1,62 @@
-# weather_app
+# Flutter Weather App Example
 
-A new Flutter project.
+An example Flutter weather app using the [OpenWeatherMap API](https://openweathermap.org/api).
 
-## Getting Started
+<img src="https://github.com/bizz84/open_weather_example_flutter/blob/main/.github/images/weather-forecast.png?raw=true" alt="Flutter Weather App Preview" width=50% height=50%>
 
-This project is a starting point for a Flutter application.
+## Supported Features
 
-A few resources to get you started if this is your first Flutter project:
+- [x] Current weather (condition and temperature)
+- [x] 5-day weather forecast
+- [x] Search by city
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## App Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# weather_app
+The app is composed by two main layers.
+
+### Data Layer
+
+The data layer contains a single weather repository that is used to fetch weather data from the [OpenWeatherMap API](https://openweathermap.org/api).
+
+The data is then parsed (using Freezed) and returned using **type-safe** model classes (`WeatherModel` and `ForecastModel`).
+
+### Presentation Layer
+
+This layer holds all the widgets, along with their cubit.
+
+Widgets do not communicate directly with the repository.
+
+Instead, they watch some cubit.
+
+## Packages in use
+
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management
+- [freezed](https://pub.dev/packages/freezed) for code generation
+- [dio](https://pub.dev/packages/dio) for talking to the REST API
+- [cached_network_image](https://pub.dev/packages/cached_network_image) for caching images
+- [mocktail](https://pub.dev/packages/mocktail) for testing
+
+
+### Running the App
+To run the app, follow these steps:
+
+1. Clone the repository or download the source code.
+2. Open the project in your favorite IDE or text editor.
+3. Get an API key from OpenWeatherMap API and replace API_KEY with your own key in the `lib/src/api/api_constants.dart` file.
+4. Run flutter pub get to install the dependencies.
+5. Run flutter run to start the app on your device or simulator.
+
+That's it! The app should now be running on your device or simulator.
+
+**Note**: to use the API you'll need to register an account and obtain your own API key. This can be set inside `lib/src/api/api_constant.dart`.
+
+### Testing and Code Coverage
+This app has been tested using the mocktail package and has a test coverage of 80.7%.
+
+![Screenshot 2023-02-18 at 14 01 41](https://user-images.githubusercontent.com/39690358/219846530-fc2996b8-59c5-4e81-9985-69cef2fe7b93.png)
+
+
+### Conclusion
+With this app, you now have a good example of how to use the OpenWeatherMap API to build a Flutter weather app. You can use this as a starting point for your own weather app or as a learning resource to better understand how to work with APIs and state management in Flutter.
+
+### [LICENSE: MIT](LICENSE.md)
