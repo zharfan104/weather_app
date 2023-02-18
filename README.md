@@ -2,7 +2,11 @@
 
 An example Flutter weather app using the [OpenWeatherMap API](https://openweathermap.org/api).
 
-<img src="https://github.com/bizz84/open_weather_example_flutter/blob/main/.github/images/weather-forecast.png?raw=true" alt="Flutter Weather App Preview" width=50% height=50%>
+## Screenshot/Video
+![Screenshot 2023-02-18 at 14 09 08](https://user-images.githubusercontent.com/39690358/219846859-36299695-2660-4e75-b895-0fbfab27453d.png)
+
+https://user-images.githubusercontent.com/39690358/219846970-b978b8e8-7e79-4acc-9a70-81cc81bb7178.mov
+
 
 ## Supported Features
 
