@@ -32,14 +32,16 @@ class WeatherInfoItem extends StatelessWidget {
     final highAndLow = 'H:$maxTemp° L:$minTemp°';
     final weatherInfo = weather.weatherInfo.first;
 
+    final day = DateFormat.EEEE().format(
+      DateTime.fromMillisecondsSinceEpoch(weather.dt * 1000),
+    );
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
           // TODO(zharfan104): Create date utils
-          DateFormat.EEEE().format(
-            DateTime.fromMillisecondsSinceEpoch(weather.dt * 1000),
-          ),
+          day,
           style: size.isSmall ? textTheme.bodySmall : textTheme.headline5,
         ),
         WeatherIconImage(
