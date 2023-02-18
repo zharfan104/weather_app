@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/resources/widgets/loading_indicator.dart';
 import 'package:weather_app/utils/state/load_data_state.dart';
 
+import '../../../../resources/widgets/error_text.dart';
 import '../../cubits/weather_cubit/weather_cubit.dart';
 import '../../cubits/weather_cubit/weather_state.dart';
 import 'forecast_weather_section_loaded.dart';
@@ -17,7 +18,9 @@ class ForecastWeatherSection extends StatelessWidget {
         final forecastLoadDataState = state.forecastLoadDataState;
 
         if (forecastLoadDataState.isError) {
-          return Text(forecastLoadDataState.getErrorMessage!);
+          return ErrorText(
+            errorMessage: forecastLoadDataState.getErrorMessage!,
+          );
         }
 
         if (forecastLoadDataState.isLoading) {
