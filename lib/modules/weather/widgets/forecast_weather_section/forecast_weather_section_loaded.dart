@@ -15,7 +15,7 @@ class ForecastWeatherSectionLoaded extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: kSpacingSmall),
+      padding: const EdgeInsets.symmetric(horizontal: kSpacingXSmall),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: weathers
