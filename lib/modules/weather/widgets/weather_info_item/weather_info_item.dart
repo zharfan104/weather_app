@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:weather_app/resources/constants/spacing.dart';
 
-import '../../../models/weather_model.dart';
+import '../../models/weather_model.dart';
 import '../weather_icon_image/weather_icon_image.dart';
 
 const _kSmallWeatherIconImage = 60.0;

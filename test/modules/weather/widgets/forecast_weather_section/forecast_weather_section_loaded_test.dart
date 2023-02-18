@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:weather_app/modules/models/weather_info_model.dart';
-import 'package:weather_app/modules/models/weather_model.dart';
-import 'package:weather_app/modules/models/weather_params_model.dart';
+import 'package:weather_app/modules/weather/models/weather_info_model.dart';
+import 'package:weather_app/modules/weather/models/weather_model.dart';
+import 'package:weather_app/modules/weather/models/weather_params_model.dart';
 import 'package:weather_app/modules/weather/widgets/forecast_weather_section/forecast_weather_section_loaded.dart';
 import 'package:weather_app/modules/weather/widgets/weather_info_item/weather_info_item.dart';
 

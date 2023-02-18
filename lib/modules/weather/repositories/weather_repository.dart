@@ -1,8 +1,8 @@
 import 'package:injectable/injectable.dart';
 
 import '../../../core/api/rest_client.dart';
-import '../../models/forecast_model.dart';
-import '../../models/weather_model.dart';
+import '../models/forecast_model.dart';
+import '../models/weather_model.dart';
 
 @singleton
 class WeatherRepository {

@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
-import '../../modules/models/weather_model.dart';
-import '../../modules/models/forecast_model.dart';
+import '../../modules/weather/models/weather_model.dart';
+import '../../modules/weather/models/forecast_model.dart';
 import 'api_constant.dart';
 
 part 'rest_client.g.dart';

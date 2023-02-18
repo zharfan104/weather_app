@@ -2,8 +2,8 @@ import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../../../utils/state/load_data_state.dart';
-import '../../../models/forecast_model.dart';
-import '../../../models/weather_model.dart';
+import '../../models/forecast_model.dart';
+import '../../models/weather_model.dart';
 
 part 'weather_state.g.dart';
 
