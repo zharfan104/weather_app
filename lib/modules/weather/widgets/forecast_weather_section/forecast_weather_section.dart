@@ -17,10 +17,14 @@ class ForecastWeatherSection extends StatelessWidget {
       builder: (context, state) {
         final forecastLoadDataState = state.forecastLoadDataState;
 
-        if (forecastLoadDataState.isError) {
-          return ErrorText(
-            errorMessage: forecastLoadDataState.getErrorMessage!,
-          );
+        /// Only show Forecast error when the weather section is not error
+        /// So, the error is not duplicate
+        if (!state.weatherLoadDataState.isError) {
+          if (forecastLoadDataState.isError) {
+            return ErrorText(
+              errorMessage: forecastLoadDataState.getErrorMessage!,
+            );
+          }
         }
 
         if (forecastLoadDataState.isLoading) {
