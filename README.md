@@ -76,7 +76,7 @@ This app has been tested using the mocktail package and has a test coverage of 8
 
 ![Screenshot 2023-02-18 at 14 01 41](https://user-images.githubusercontent.com/39690358/219846530-fc2996b8-59c5-4e81-9985-69cef2fe7b93.png)
 
-## TODO
+## TODO (what will we done after this)
 
 - [ ] Implement localization using [flutter_localization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
 - [ ] Use [flutter_gen](https://pub.dev/packages/flutter_gen) to generate image assets for the app
