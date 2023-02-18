@@ -34,12 +34,31 @@ Instead, they watch some cubit.
 
 ## Packages in use
 
-- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management
-- [freezed](https://pub.dev/packages/freezed) for code generation
-- [dio](https://pub.dev/packages/dio) for talking to the REST API
+- [bloc](https://pub.dev/packages/bloc) for state management
 - [cached_network_image](https://pub.dev/packages/cached_network_image) for caching images
-- [mocktail](https://pub.dev/packages/mocktail) for testing
+- [copy_with_extension](https://pub.dev/packages/copy_with_extension) for generating `copyWith` methods
+- [dio](https://pub.dev/packages/dio) for talking to the REST API
+- [equatable](https://pub.dev/packages/equatable) for creating objects that can be easily compared
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for integrating `bloc` with Flutter
+- [freezed_annotation](https://pub.dev/packages/freezed_annotation) for code generation (data models)
+- [get_it](https://pub.dev/packages/get_it) for dependency injection
+- [injectable](https://pub.dev/packages/injectable) for creating injectable classes
+- [intl](https://pub.dev/packages/intl) for internationalizing Flutter apps
+- [json_annotation](https://pub.dev/packages/json_annotation) for JSON serialization/deserialization
+- [retrofit](https://pub.dev/packages/retrofit) for type-safe HTTP requests
 
+### Dev dependencies
+
+- [bloc_test](https://pub.dev/packages/bloc_test) for testing `bloc` implementations
+- [build_runner](https://pub.dev/packages/build_runner) for generating code
+- [copy_with_extension_gen](https://pub.dev/packages/copy_with_extension_gen) for generating `copyWith` methods
+- [dart_code_metrics](https://pub.dev/packages/dart_code_metrics) for analyzing code metrics
+- [flutter_test](https://flutter.dev/docs/testing) for testing Flutter apps
+- [freezed](https://pub.dev/packages/freezed) for code generation
+- [injectable_generator](https://pub.dev/packages/injectable_generator) for generating injectable classes
+- [json_serializable](https://pub.dev/packages/json_serializable) for JSON serialization/deserialization
+- [mocktail](https://pub.dev/packages/mocktail) for testing
+- [retrofit_generator](https://pub.dev/packages/retrofit_generator) for generating code for the `retrofit` package
 
 ### Running the App
 To run the app, follow these steps:
@@ -59,17 +78,16 @@ This app has been tested using the mocktail package and has a test coverage of 8
 
 ![Screenshot 2023-02-18 at 14 01 41](https://user-images.githubusercontent.com/39690358/219846530-fc2996b8-59c5-4e81-9985-69cef2fe7b93.png)
 
-
 ## TODO
 
-- Implement localization using [flutter_localization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
-- Use [flutter_gen](https://pub.dev/packages/flutter_gen) to generate image assets for the app
-- Improve the error UI by displaying a relevant image and message to the user
-- Add more tests to improve code coverage and ensure app stability
-- Implement [AutoRoute](https://pub.dev/packages/auto_route) for declarative routing
-- Check internet connectivity using the [connectivity_plus](https://pub.dev/packages/connectivity_plus) and [internet_connection_checker_plus](https://pub.dev/packages/internet_connection_checker_plus) packages to provide the user with appropriate feedback
-- Create a better loading indicator to improve user experience
-- Improve the error indicator to provide more information to the user about the cause of the error
+- [ ] Implement localization using [flutter_localization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+- [ ] Use [flutter_gen](https://pub.dev/packages/flutter_gen) to generate image assets for the app
+- [ ] Improve the error UI by displaying a relevant image and message to the user
+- [ ] Add more tests to improve code coverage and ensure app stability
+- [ ] Implement [AutoRoute](https://pub.dev/packages/auto_route) for declarative routing
+- [ ] Check internet connectivity using the [connectivity_plus](https://pub.dev/packages/connectivity_plus) and [internet_connection_checker_plus](https://pub.dev/packages/internet_connection_checker_plus) packages to provide the user with appropriate feedback
+- [ ] Create a better loading indicator to improve user experience
+- [ ] Improve the error indicator to provide more information to the user about the cause of the error
 
 
 ### Conclusion
