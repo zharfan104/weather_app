@@ -71,8 +71,6 @@ To run the app, follow these steps:
 
 That's it! The app should now be running on your device or simulator.
 
-**Note**: to use the API you'll need to register an account and obtain your own API key. This can be set inside `lib/src/api/api_constant.dart`.
-
 ### Testing and Code Coverage
 This app has been tested using the mocktail package and has a test coverage of 80.7%.
 
