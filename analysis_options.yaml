@@ -937,6 +937,7 @@ dart_code_metrics:
     - prefer-match-file-name:
         exclude:
           - lib/core/get_it/get_it.config.dart
+          - test/**
     - prefer-moving-to-variable:
         allowed-duplicated-chains: 2
     - prefer-static-class:
