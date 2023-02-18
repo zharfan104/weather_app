@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:weather_app/resources/constants/spacing.dart';
 
 import '../../../models/weather_model.dart';
 import '../weather_icon_image/weather_icon_image.dart';
@@ -29,17 +30,20 @@ class WeatherInfoItem extends StatelessWidget {
     final minTemp = weather.weatherParams.tempMin.toInt().toString();
     final maxTemp = weather.weatherParams.tempMax.toInt().toString();
     final highAndLow = 'H:$maxTemp° L:$minTemp°';
+    final weatherInfo = weather.weatherInfo.first;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
+          // TODO(zharfan104): Create date utils
           DateFormat.EEEE().format(
             DateTime.fromMillisecondsSinceEpoch(weather.dt * 1000),
           ),
+          style: size.isSmall ? textTheme.bodySmall : textTheme.headline5,
         ),
         WeatherIconImage(
-          icon: weather.weatherInfo.first.icon,
+          icon: weatherInfo.icon,
           size:
               size.isSmall ? _kSmallWeatherIconImage : _kMediumWeatherIconImage,
         ),
@@ -47,7 +51,7 @@ class WeatherInfoItem extends StatelessWidget {
           temp,
           style: size.isSmall ? textTheme.headline5 : textTheme.headline2,
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: kSpacingXSmall),
         Text(
           highAndLow,
           style: size.isSmall ? textTheme.bodySmall : textTheme.headline5,
