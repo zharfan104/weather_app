@@ -899,10 +899,6 @@ dart_code_metrics:
     - avoid-passing-async-when-sync-expected:
         exclude:
           - test/**
-    - avoid-top-level-members-in-tests:
-        exclude:
-          - 'test/**/*.mocks.dart'
-          - 'test/**/*_mocks.dart'
     - format-comment: false
     - member-ordering:
         alphabetize: false
