@@ -32,7 +32,7 @@ Widgets do not communicate directly with the repository.
 
 Instead, they watch some cubit.
 
-## Packages in use
+### Packages in use
 
 - [bloc](https://pub.dev/packages/bloc) for state management
 - [cached_network_image](https://pub.dev/packages/cached_network_image) for caching images
@@ -60,7 +60,7 @@ Instead, they watch some cubit.
 - [mocktail](https://pub.dev/packages/mocktail) for testing
 - [retrofit_generator](https://pub.dev/packages/retrofit_generator) for generating code for the `retrofit` package
 
-### Running the App
+## Running the App
 To run the app, follow these steps:
 
 1. Clone the repository or download the source code.
@@ -90,7 +90,7 @@ This app has been tested using the mocktail package and has a test coverage of 8
 - [ ] Improve the error indicator to provide more information to the user about the cause of the error
 
 
-### Conclusion
+## Conclusion
 With this app, you now have a good example of how to use the OpenWeatherMap API to build a Flutter weather app. You can use this as a starting point for your own weather app or as a learning resource to better understand how to work with APIs and state management in Flutter.
 
 ### [LICENSE: MIT](LICENSE.md)
