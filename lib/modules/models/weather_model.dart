@@ -2,6 +2,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:weather_app/modules/models/weather_info_model.dart';
 import 'package:weather_app/modules/models/weather_params_model.dart';
 
+// ignore_for_file: invalid_annotation_target
+
 part 'weather_model.freezed.dart';
 part 'weather_model.g.dart';
 
