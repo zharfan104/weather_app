@@ -934,7 +934,9 @@ dart_code_metrics:
     - prefer-correct-type-name:
         min-length: 3
         max-length: 50
-    - prefer-match-file-name: false
+    - prefer-match-file-name:
+        exclude:
+          - lib/core/get_it/get_it.config.dart
     - prefer-moving-to-variable:
         allowed-duplicated-chains: 2
     - prefer-static-class:
