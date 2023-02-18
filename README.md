@@ -60,6 +60,18 @@ This app has been tested using the mocktail package and has a test coverage of 8
 ![Screenshot 2023-02-18 at 14 01 41](https://user-images.githubusercontent.com/39690358/219846530-fc2996b8-59c5-4e81-9985-69cef2fe7b93.png)
 
 
+## TODO
+
+- Implement localization using [flutter_localization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+- Use [flutter_gen](https://pub.dev/packages/flutter_gen) to generate image assets for the app
+- Improve the error UI by displaying a relevant image and message to the user
+- Add more tests to improve code coverage and ensure app stability
+- Implement [AutoRoute](https://pub.dev/packages/auto_route) for declarative routing
+- Check internet connectivity using the [connectivity_plus](https://pub.dev/packages/connectivity_plus) and [internet_connection_checker_plus](https://pub.dev/packages/internet_connection_checker_plus) packages to provide the user with appropriate feedback
+- Create a better loading indicator to improve user experience
+- Improve the error indicator to provide more information to the user about the cause of the error
+
+
 ### Conclusion
 With this app, you now have a good example of how to use the OpenWeatherMap API to build a Flutter weather app. You can use this as a starting point for your own weather app or as a learning resource to better understand how to work with APIs and state management in Flutter.
 
