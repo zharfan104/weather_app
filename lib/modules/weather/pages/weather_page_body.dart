@@ -28,6 +28,7 @@ class _WeatherPageBodyState extends State<WeatherPageBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
