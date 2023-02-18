@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather_app/modules/models/weather_model.dart';
 import 'package:weather_app/utils/state/load_data_state.dart';
 
 import '../../../../resources/widgets/error_text.dart';
