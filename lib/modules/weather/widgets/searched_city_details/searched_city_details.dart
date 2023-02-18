@@ -16,7 +16,10 @@ class SearchedCityDetails extends StatelessWidget {
       buildWhen: (previous, current) =>
           current.weatherLoadDataState is LoadingDataState,
       builder: (context, state) {
-        return Text('Weather in: ${state.city}');
+        return Text(
+          'Weather in: ${state.city}',
+          style: Theme.of(context).textTheme.headline5,
+        );
       },
     );
   }

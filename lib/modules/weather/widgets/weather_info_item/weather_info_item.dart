@@ -45,12 +45,12 @@ class WeatherInfoItem extends StatelessWidget {
         ),
         Text(
           temp,
-          style: size.isSmall ? textTheme.headline6 : textTheme.headline2,
+          style: size.isSmall ? textTheme.headline5 : textTheme.headline2,
         ),
         const SizedBox(height: 8),
         Text(
           highAndLow,
-          style: size.isSmall ? textTheme.labelSmall : textTheme.bodyText2,
+          style: size.isSmall ? textTheme.bodySmall : textTheme.headline5,
         ),
       ],
     );

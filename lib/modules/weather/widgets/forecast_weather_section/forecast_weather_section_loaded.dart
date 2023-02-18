@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/resources/constants/spacing.dart';
 
 import '../../../models/weather_model.dart';
 import '../weather_info_item/weather_info_item.dart';
@@ -13,11 +14,14 @@ class ForecastWeatherSectionLoaded extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: weathers
-          .map((weather) => WeatherInfoItem.small(weather: weather))
-          .toList(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: kSpacingSmall),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: weathers
+            .map((weather) => WeatherInfoItem.small(weather: weather))
+            .toList(),
+      ),
     );
   }
 }
